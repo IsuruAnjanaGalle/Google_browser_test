@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Google</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="google-g-2015-logo-png-transparent.png">
+</head>
+<body>
+	<section>
+		<div class="main">
+			<img src="google.png">
+			<div class="searchBx">
+				<input type="text" name="" class="query" value="">
+				<div class="icons">
+					<div><img src="search.png"></div>
+					<div><img src="mic.png"></div>
+				</div>
+			</div>
+			<div class="button">
+				<button class="searchBtn">Google Search</button>
+				<button class="searchBtn">I'm feeling lucky</button>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		let query = document.querySelector('.query');
+		let searchBtn = document.querySelector('.searchBtn');
+
+		searchBtn.onclick = function(){
+			let url ='https://www.google.com/search?q='+query.value;
+			window.open(url,'_self');
+		}
+	</script>
+</body>
+</html>
